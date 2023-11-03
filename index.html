@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/62667afda8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Engineer</p>
+            <h1>Hey, my name is<br><span>Jair</span> Martinez</h1>
+        </div>
+    </div>
+</div>
+<!--------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About me</h1>
+                <p>I am a data engineer and an enthusiastic developer, proficient on
+                    distinct technical skills, I am passionate about learning more about the
+                    tech world and I am always open to acquire new knowledge on
+                    different fields. I am proactive, I can adapt to any type of situations and
+                    I am a fast learner, always trying to stay on point on my efficiency and
+                    always trying to give my best effort. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-link active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                   
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Analyst</span><br>Data Analyst</li>
+                            <li><span>Data engineering</span><br>Pipeline creation and big data manager</li>
+                            <li><span>Machine learning</span><br>Machine Learning developer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Researcher</span><br>State of the art on BI tools</li>
+                            <li><span>Big data</span><br>Analyze and process big data on google big query</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Data Engineer in Universidad Politécnica de Yucatán</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------Services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python developer</h2>
+                <p>I can develop applications utilizing python, I have certifications on web scraping and have been developing an OCR python app for ticket detection and annotation (working on it)</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>BI specialist</h2>
+                <p>Certificate on Data Visualization using python, and have experience with distinct BI tools such as Tableau, Google Looker Studio, Power BI, Oracle Analytics, and others </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data engineer</h2>
+                <p>I have developed my career on data engineering, with knowledge on big data, data warehouse, pipelines. I have utilized Apache Spark, Hadoop, and also Google Big Query, I have experience writing SQL queries</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.jpg">
+                <div class="layer">
+                    <h3>Algorithm development</h3>
+                    <p>Among a lot of algorithms I've worked with, I have made a KNN from scratch using the Sklearn dataset Iris</p>
+                    <a href="https://github.com/JmTzAd/KNN_from_Scratch/blob/main/Knn_from_scrath.ipynb"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Data mining INEGI, KDD process</h3>
+                    <p>I worked on a data mining project utilizing INEGI data, analyzing and doing a linear regression for the people with no Health Insurance in the state of Morelos, México, utilzing the KDD process</p>
+                    <a href="https://github.com/JmTzAd/Inegi_DM_LR/blob/main/InegiOverall/FinalInegi.ipynb"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+            <img src="images/test2.png">
+            <div class="layer">
+                <h3>State of the Art Bussiness Intelligence Tools</h3>
+                <p>I wrote a state of the art about the BI tools utilizing the Garnetts magic quadrant as a source for choosing the tools</p>
+                <a href="https://docs.google.com/document/d/1y1Vvl6TP7KDy2Rp1i_69xsoCR7oO-7Jb/edit?usp=sharing&ouid=112722275374252049702&rtpof=true&sd=true"><i class="fa-solid fa-link"></i></a>
+            </div>
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- -----Contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope-circle-check"></i> jairamartinezc@outlook.com</p>
+                <div class="social-icons">
+                    <a href="https://github.com/JmTzAd"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jair-armando-martinez-castillo-858393251/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Jair Martinez Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-link")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+
+</body>
+</html>
